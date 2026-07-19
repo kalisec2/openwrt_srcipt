@@ -28,7 +28,7 @@ opkg install bash iptables dnsmasq-full curl ca-bundle ipset ip-full \
 
 echo "🌐 获取 OpenClash 最新版本..."
 curl -L --retry 3 --connect-timeout 10 \
-    https://api.github.com/repos/vernesong/OpenClash/releases/latest \
+    https://gh-proxy.org/https://api.github.com/repos/vernesong/OpenClash/releases/latest \
     -o /tmp/openclash_version.json
 
 if [ ! -s /tmp/openclash_version.json ]; then
